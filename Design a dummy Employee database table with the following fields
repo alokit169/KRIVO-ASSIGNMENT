@@ -1,0 +1,29 @@
+create database employee;
+use employee;
+create table employeetable 
+(
+EmployeeID int,
+EmployeeName varchar(100),
+DateOfBirth date,
+Email varchar(150),
+PhoneNumber bigint,
+Street varchar(100),
+City varchar(100),
+State varchar(100),
+Country varchar(100),
+Pincode int
+);
+insert into employeetable
+(EmployeeID,EmployeeName,DateOfBirth,Email,PhoneNumber,Street,City,State,Country,Pincode)
+values
+(1,"Asit","2003-04-11","asit@gmail.com",548754548,"45","Indore","Madhya Pradesh","India",452002),
+(2,"Rahul","2002-06-10","rahul@gmail.com",45577545,"05","Indore","Madhya Pradesh","India",452002),
+(3,"Sujal","2002-10-17","Sujal@gmail.com",545694895,"58","Ratlam","Madhya Pradesh","India",452002),
+(4,"John","2000-08-15","john@gmail.com",87489575,"65A","Los Angeles","California","United State",90099),
+(5,"Aman","2002-05-01","aman@gmail.com",64568565,"78","Indore","Madhya Pradesh","India",452002),
+(6,"Pragya","2002-09-05","pragya@gmail.com",457887877,"A87","Indore","Madhya Pradesh","India",452002),
+(7,"Anukrati","2001-11-27","anukrati@gmail.com",983989344,"68B","Indore","Madhya Pradesh","India",452002),
+(8,"Anushka","2002-12-15","anushka@gmail.com",56468954,"89AB","Indore","Madhya Pradesh","India",452002),
+(9,"Tilak","2000-02-28","tilak@gmail.com",98978948,"06","Ujjain","Madhya Pradesh","India",456001),
+(10,"Bhumika","2002-07-20","bhumika@gmail.com",54578898,"56A","Indore","Madhya Pradesh","India",452002);
+select * from employeetable;
