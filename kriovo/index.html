@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>SignUp</title>    
+<link rel="stylesheet" href="login.css">
+<script src="index.js"></script>
+</head>
+    <body>
+        <div class="sign-up-form">
+            <img src="logo.png" alt="">
+            <h1 class="logo"></h1>
+            <h1>Sign Up Now</h1>
+            <hr>
+            <form onsubmit="return checkPassword()">
+                <input type="text" class="input-box" placeholder="Enter your name" required>
+                <input type="email" class="input-box" placeholder="Enter Your email" required>
+                 <input type="password" class="input-box" id="passwords" value="" placeholder="Password" required>
+                <span id="messages" style="color: red;"></span><br>
+                <input type="password" class="input-box" id="passwordss" value="" placeholder="Confirm Password" required> 
+                <span id="messagess" style="color: red;"></span><br>
+                <a href="login.html">
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </a>
+                <hr>
+                <p class="or">OR</p>
+                
+                <p>Do you have an account ? <a href="login.html">Sign in</a> </p>
+            </form>
+        </div>
+    </body>
+</html>
